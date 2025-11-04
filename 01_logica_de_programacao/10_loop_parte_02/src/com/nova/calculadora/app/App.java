@@ -9,7 +9,6 @@ public class App {
         double x;
         double y;
         double resultado = 0.0;
-        int opcao = 0;
         String operacao;
 
         // fixme: loop
@@ -26,12 +25,14 @@ public class App {
             System.out.println("informe a opção desejada");
             operacao = leia.nextLine();
 
-            if (operacao != "7") {
+            if (!operacao.equals("7")) {
                 // entrada de dados
                 System.out.println("informe o valor de x");
                 x= leia.nextDouble();
                 System.out.println("informe o valor de y");
                 y= leia.nextDouble();
+
+                leia.nextLine();
 
                 switch (operacao) {
                     case"1":
@@ -60,14 +61,10 @@ public class App {
                 //mostrar o resultado
                 System.out.println("resultado: " + resultado);
             }
-            else {
-                opcao = Integer.parseInt(operacao);
-            }
 
             //limpeza de buffer
-            leia.nextLine();
 
-        } while(opcao != 7);
+        } while(!operacao.equals("7"));
 
 
         //fecha objeto leia
