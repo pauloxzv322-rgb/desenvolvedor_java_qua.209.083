@@ -26,7 +26,10 @@ public class App {
                 );
 
             
-            combustivel.setGasolina(
+           
+                
+                if (opcao != "Sair do programa") {
+                     combustivel.setGasolina(
                 Double.parseDouble(JOptionPane.showInputDialog("Informe o valor da gasolina:"
                 ).replace(",",".")
                 )
@@ -35,8 +38,6 @@ public class App {
                 
                 //saida de dados
                 JOptionPane.showMessageDialog(null, combustivel.calcularCombustivel());
-                
-                if (opcao != "Sair do programa") {
                     }
         } while (opcao != "Sair do programa");
     }
