@@ -19,26 +19,19 @@ public class App {
                 null,
                 "selecione uma opcao:",
                 "combustivel",
-                0,
+                JOptionPane.INFORMATION_MESSAGE,
                 null,
                 opcoes,
                 opcoes[0]
                 );
-
-            
-           
                 
                 if (opcao != "Sair do programa") {
-                     combustivel.setGasolina(
-                Double.parseDouble(JOptionPane.showInputDialog("Informe o valor da gasolina:"
-                ).replace(",",".")
-                )
-                );
-                combustivel.setEtanol(Double.parseDouble(JOptionPane.showInputDialog("Informe o valor do etanol:")));
+                     combustivel.setGasolina(Double.parseDouble(JOptionPane.showInputDialog("Informe o valor da gasolina:").replace(",",".")));
+                    combustivel.setEtanol(Double.parseDouble(JOptionPane.showInputDialog("Informe o valor do etanol:").replace(",",".")));
                 
-                //saida de dados
-                JOptionPane.showMessageDialog(null, combustivel.calcularCombustivel());
-                    }
-        } while (opcao != "Sair do programa");
+                    //saida de dados
+                    JOptionPane.showMessageDialog(null, combustivel.calcularCombustivel());
+                }
+        } while(opcao != "Sair do programa");
     }
 }
