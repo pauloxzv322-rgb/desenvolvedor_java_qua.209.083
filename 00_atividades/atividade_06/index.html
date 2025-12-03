@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Rafael">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Formulário de Cadastro</h1>
+
+    <form>
+        <label>Nome completo:</label><br>
+        <input type="text" name="Nome" required><br><br>
+        <label>Data de Nascimento:</label><br>
+        <input type="date" name="Data de Nascimento" required><br><br>
+        <label>E-mail:</label><br>
+        <input type="email" name="E-mail" required><br><br>
+        <label>CPF:</label><br>
+        <input type="text" name="CPF" maxlength="14" required><br><br>
+        <label>Telefone:</label><br>
+        <input type="tel" name="Telefone"><br><br>
+        <label>Altura</label><br>
+        <input type="number" name="altura" step="0.01" placeholder="1.50"><br><br>
+        <label>Gênero:</label><br>
+        <select name="Gênero">
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Prefiro não informar</option>
+        </select><br><br>
+            <label>Escolaridade</label><br>
+            <select name="Escolaridade">
+                <option>Nível Fundamental</option>
+                <option>Nível Médio</option>
+                <option>Nível Superior</option>
+                <option>Pós-Graduação</option>  
+        </select><br><br>
+        <label>Profissão</label><br>
+        <input type="text" name="Profissão"><br><br>
+        <label>Salário</label><br>
+        <input type="number" name="Salário"><br><br>
+
+        <h3>Endereço</h3>
+        <label>CEP</label><br>
+        <input type="text" name="CEP"><br><br>
+        <label>UF</label><br>
+        <input type="text" name="UF" maxlength="2"><br><br>
+        <label>Cidade</label><br>
+        <input type="text" name="Cidade"><br><br>
+        <label>Bairro</label><br>
+        <input type="text" name="Bairro"<br><br><br>
+        <label>Logradouro</label><br>
+        <input type="text" name="Logradouro"><br><br>
+        <label>Complemento</label><br>
+        <input type="text" name="Complemento"><br><br>
+        <label>Número</label><br>
+        <input type="text" name="Número"><br><br>
+        
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+    </form>
+
+</body>
+</html>

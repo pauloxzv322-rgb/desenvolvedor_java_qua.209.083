@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="author" content="Rafael">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario HTML</h1>
+    <hr>
+    
+    <!-- formulario -->
+     <form>
+        <label>Nome:</label><br>
+        <input type="text" maxlength="20" placeholder="Digite até os 20 caractes" value="Fulano" required><br><br>
+        <label>Idade:</label><br>
+        <input type="number" value="10" min="12" max="65"></imput><br>
+        <label>Peso:</label><br>
+        <input type="number" value="20" step="0.01"><br><br>
+        <label>Data</label>
+        <input type="date"><br><br>
+        <label>Escolaridade:</label><br> 
+        <select>
+            <option>Escolha uma opção...</option>
+            <option>Nível Fundamental</option>
+            <option>Nível Médio</option>
+            <option>Nível Superior</option>
+            <option>Pós-Graduação</option>
+        </select><br><br>
+        <label>Enviar arquivo:</label><br>
+        <input type="file"><br><br>
+        <!--botão de envio-->
+        <button type="submit">Enviar</button><br>
+        <br>
+        <!--botão de reset-->
+        <button type="reset">Limpar</button>
+     </form>
+</body>
+</html>

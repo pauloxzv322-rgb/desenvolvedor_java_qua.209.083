@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rafael Cursino"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com CSS</title>
+
+    <!-- css externo -->
+     <link href="css/estilos.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <hr>
+        <form>
+            <label>Nome:</label>
+            <input type="text" class="nome">
+            <label>Data de Nascimentos:</label>
+            <input type="date" class="data-nascimento">
+            <label>Idade</label>
+            <input type="number" class="idade">
+            <label>Altura:</label>
+            <input type="number" step="0.01" class="altura">
+            <label>Peso</label>
+            <input type="number" step="0.01">
+            <label>Gênero:</label>
+            <select class="genero">
+              <option>Escolha um gênero..</option>
+              <option>Masculino</option>
+              <option>Feminino</option>
+              <option>Outro</option>
+              <option>Prefiro não informar</option>
+            </select>
+            <label>E-mail</label>
+            <input type="text" class="email">
+            <label>CPF:</label>
+            <input type="text" maxlength="14" class="cpf">
+            <label>Telefone:</label>
+            <input type="tel" class="telefone">
+            <label>Escolaridade</label>
+            <select class="escolaridade">
+                <option>Escolaridade..</option>
+                <option>Nível Fundamental</option>
+                <option>Nível Médio</option>
+                <option>Nível Superior</option>
+                <option>Pós-Graduação</option>  
+            </select>
+            <label>Profissão</label>
+            <input type="text" name="Profissão">
+            <label>Salário</label>
+            <input type="number">
+            <label>Cor Favorita</label>
+            <input type="text">
+            <label>Filme Favorito</label>
+            <input type="text">
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+</body>
+</html>
