@@ -13,7 +13,19 @@
     <!-- main -->
     <main>
         <div class="container">
-            <img src="img/home.png" alt="Home" />
+            <h1>Próximos Eventos</h1>
+        <!--/card -->
+            <div class="card mt-5" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"th:text="${evento.nome}"></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">ID: <span> th text ="${evento.idEvento}"</span></span>></h6>
+    <div class="card-text">Local : <span th:text="${evento.local}"></span>.
+    </div>
+    <div class="#" class="card-link">span th:text="${evento.data}"></span>.
+    </div>
+    <div class="#" class="card-link">span th:text="${evento.hora}"></span>.
+    </div>
+</div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
