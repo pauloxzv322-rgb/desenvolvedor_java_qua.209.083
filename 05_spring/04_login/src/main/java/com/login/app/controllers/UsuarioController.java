@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.login.app.models.Usuario;
+import com.login.app.repositories.UsuarioRepository;
 
 @Controller
 public class UsuarioController {
